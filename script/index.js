@@ -1,3 +1,5 @@
+document.getElementById('music').volume = 0.2
+
 function switchTheme() {
     document.body.classList.toggle('dark-theme');
     document.body.classList.toggle('light-theme');
@@ -6,7 +8,7 @@ function switchTheme() {
 
     const audio = document.querySelector('audio#music');
     audio.src = `assets/musics/${music}`;
-    audio.play()
     audio.volume = 0.2;
+    audio.play()
 }
 
