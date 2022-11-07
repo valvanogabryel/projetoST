@@ -76,6 +76,27 @@ label {
     font-family: 'Libre Baskerville', serif;
 }
 
+input,
+textarea {
+    border: 2px solid var(--primary-color-contrast);
+    background: var(--field-background-color);
+    color: var(--primary-color-contrast);
+    padding: 8px;
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+
+label {
+    margin: 0 0 8px 0;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: none;
+    border-color: #000;
+}
+
+
 button {
     padding: 16px 32px;
     background: transparent;
@@ -171,6 +192,18 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+main::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--page-background) no-repeat, url('../images/backgrounds/florest.png') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
 
 /*Section 1 Style*/
 
@@ -325,4 +358,43 @@ section {
     top: 24px;
     left: 24px;
     z-index: -1;
+}
+
+/* Footer Style */
+
+footer {
+    padding: 60px 0;
+    background: var(--footer-background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+footer p {
+    max-width: 700px;
+    margin: 0 0 24px 0;
+}
+
+footer::before,
+footer::after {
+    content: '';
+    width: 300px;
+    height: 200px;
+    background: url('../images/footer/tape.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -30px;
+}
+
+footer::before {
+    left: -50px;
+    transform: rotateZ('-10deg');
+}
+
+footer::after {
+    right: -50px;
+    transform: rotateZ('10deg');
 }
