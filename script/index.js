@@ -1,5 +1,5 @@
 function switchTheme() {
-    document.body.classList.remove('light-theme');
-    document.body.classList.add('dark-theme');
+    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
 }
 
