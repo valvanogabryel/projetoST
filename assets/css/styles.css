@@ -72,7 +72,7 @@ h3 {
 }
 
 .dark-theme .inverted-element {
-    transform: rotateZ(180deg) scaleX(-1);
+    transform: rotateZ(180deg) scaleX(1);
 }
 
 p {
