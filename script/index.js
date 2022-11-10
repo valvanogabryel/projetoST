@@ -1,4 +1,10 @@
 document.getElementById('music').volume = 0.2
+window.sr = ScrollReveal({ reset: true })
+sr.reveal('.reveal-1', { duration: 1000 })
+sr.reveal('.reveal-2', { duration: 1000 })
+sr.reveal('.reveal-3', { duration: 1000 })
+sr.reveal('.reveal-4', { duration: 1000 })
+
 
 function switchTheme() {
     document.body.classList.toggle('dark-theme');

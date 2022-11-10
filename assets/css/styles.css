@@ -227,6 +227,13 @@ section {
     max-width: 1200px;
 }
 
+.reveal-1,
+.reveal-2,
+.reveal-3,
+.reveal-4 {
+    visibility: hidden;
+}
+
 #section-inverted-world {
     align-items: center;
 }
