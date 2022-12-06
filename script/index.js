@@ -1,4 +1,8 @@
 document.getElementById('music').volume = 0.2
+
+
+
+
 window.sr = ScrollReveal({ reset: true })
 sr.reveal('.reveal-1', {
     rotate: { x: 80, y: 0, z: 0 },
