@@ -805,3 +805,11 @@ footer::after {
   right: -50px;
   transform: rotateZ(10deg);
 }
+
+@media screen and (max-width: 475px) {
+  footer::before,
+  footer::after {
+    content: "";
+    display: none;
+  }
+}
